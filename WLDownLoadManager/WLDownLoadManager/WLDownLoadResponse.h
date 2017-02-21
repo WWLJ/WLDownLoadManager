@@ -30,8 +30,6 @@ typedef NS_ENUM (NSInteger, WLDownloadStatus) {
  下载状态
  */
 @property (nonatomic, assign) WLDownloadStatus downloadStatus;
-@property (nonatomic, strong) id targert;
-@property (nonatomic, strong) NSString *action;
 
 /**
  当前进度

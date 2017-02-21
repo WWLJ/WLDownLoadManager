@@ -92,7 +92,7 @@
 }
 
 
-- (void)pauseDownLoadWithIdentifier:(NSString *)identifier
+- (void)pauseDownLoad
 {
     __weak typeof(self) this = self;
     if (self.normalSessionTask) {
@@ -110,10 +110,10 @@
     self.downloadPause([self getDownloadRespose:WLDownloadPause identifier:self.identifier progress:self.lastProgress downloadUrl:nil downloadSaveFileUrl:nil downloadData:nil downloadResult:@"任务暂停" lastProgress:0.0]);
 }
 
-- (void)resumeDownLoadWithIdentifier:(NSString *)identifier
+- (void)resumeDownLoad
 {
-    if (!self.partialData && identifier.length > 0) {
-        self.partialData = [WLDownLoadUtil getResumeDataWithIdentifier:identifier];
+    if (!self.partialData && self.identifier.length > 0) {
+        self.partialData = [WLDownLoadUtil getResumeDataWithIdentifier:self.identifier];
         NSLog(@"read resumedata from file");
     }
     
@@ -127,7 +127,7 @@
     self.downloadResume([self getDownloadRespose:WLDownloadResume identifier:self.identifier progress:self.lastProgress downloadUrl:nil downloadSaveFileUrl:nil downloadData:nil downloadResult:@"任务重启" lastProgress:0.0]);
 }
 
-- (void)cancleDownLoadIdentifier:(NSString *)identifier
+- (void)cancleDownLoad
 {
     if (self.normalSessionTask) {
         [self.normalSessionTask cancel];
@@ -225,7 +225,7 @@
             NSLog(@"resumeData = %@", [[NSString alloc] initWithData:resumeData encoding:NSUTF8StringEncoding]);
         }
     } else {
-        [self resumeDownLoadWithIdentifier:self.identifier];
+        [self resumeDownLoad];
     }
     
 }

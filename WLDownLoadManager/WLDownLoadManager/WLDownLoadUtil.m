@@ -61,7 +61,7 @@
     return filePath;
 }
 
-+ (NSString *)md5EncodedStringWithString:(NSString *)string;
++ (NSString *)md5EncodedStringWithString:(NSString *)string
 {
     const char *cStr = [string UTF8String];
     if (NULL==cStr) {

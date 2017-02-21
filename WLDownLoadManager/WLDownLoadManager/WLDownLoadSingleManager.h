@@ -35,9 +35,9 @@ typedef void(^downloadResume)(WLDownLoadResponse *response);
                      pause:(void(^)(WLDownLoadResponse *response)) pause
                     resume:(void(^)(WLDownLoadResponse *response)) resume;
 
-- (void)pauseDownLoadWithIdentifier:(NSString *)identifier;
-- (void)resumeDownLoadWithIdentifier:(NSString *)identifier;
-- (void)cancleDownLoadIdentifier:(NSString *)identifier;
+- (void)pauseDownLoad;
+- (void)resumeDownLoad;
+- (void)cancleDownLoad;
 
 
 
