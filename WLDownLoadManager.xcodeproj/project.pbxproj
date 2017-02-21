@@ -13,6 +13,11 @@
 		045E42C81E5BECF300041E85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045E42C61E5BECF300041E85 /* Main.storyboard */; };
 		045E42CA1E5BECF300041E85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045E42C91E5BECF300041E85 /* Assets.xcassets */; };
 		045E42CD1E5BECF300041E85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045E42CB1E5BECF300041E85 /* LaunchScreen.storyboard */; };
+		045E42D71E5BEF0900041E85 /* WLDownLoadResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 045E42D61E5BEF0900041E85 /* WLDownLoadResponse.m */; };
+		045E42DA1E5BF01200041E85 /* WLDownLoadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 045E42D91E5BF01200041E85 /* WLDownLoadRequest.m */; };
+		045E42DD1E5BF0DE00041E85 /* WLDownLoadSingleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 045E42DC1E5BF0DE00041E85 /* WLDownLoadSingleManager.m */; };
+		045E42E01E5BF0F000041E85 /* WLDownLoadGroupManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 045E42DF1E5BF0F000041E85 /* WLDownLoadGroupManager.m */; };
+		045E42E41E5C108600041E85 /* WLDownLoadUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 045E42E31E5C108600041E85 /* WLDownLoadUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		045E42C91E5BECF300041E85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		045E42CC1E5BECF300041E85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		045E42CE1E5BECF300041E85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045E42D51E5BEF0900041E85 /* WLDownLoadResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLDownLoadResponse.h; sourceTree = "<group>"; };
+		045E42D61E5BEF0900041E85 /* WLDownLoadResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLDownLoadResponse.m; sourceTree = "<group>"; };
+		045E42D81E5BF01200041E85 /* WLDownLoadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLDownLoadRequest.h; sourceTree = "<group>"; };
+		045E42D91E5BF01200041E85 /* WLDownLoadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLDownLoadRequest.m; sourceTree = "<group>"; };
+		045E42DB1E5BF0DE00041E85 /* WLDownLoadSingleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLDownLoadSingleManager.h; sourceTree = "<group>"; };
+		045E42DC1E5BF0DE00041E85 /* WLDownLoadSingleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLDownLoadSingleManager.m; sourceTree = "<group>"; };
+		045E42DE1E5BF0F000041E85 /* WLDownLoadGroupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLDownLoadGroupManager.h; sourceTree = "<group>"; };
+		045E42DF1E5BF0F000041E85 /* WLDownLoadGroupManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLDownLoadGroupManager.m; sourceTree = "<group>"; };
+		045E42E21E5C108600041E85 /* WLDownLoadUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLDownLoadUtil.h; sourceTree = "<group>"; };
+		045E42E31E5C108600041E85 /* WLDownLoadUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLDownLoadUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +77,7 @@
 				045E42C11E5BECF300041E85 /* AppDelegate.m */,
 				045E42C31E5BECF300041E85 /* ViewController.h */,
 				045E42C41E5BECF300041E85 /* ViewController.m */,
+				045E42D41E5BEE9C00041E85 /* WLDownLoadManager */,
 				045E42C61E5BECF300041E85 /* Main.storyboard */,
 				045E42C91E5BECF300041E85 /* Assets.xcassets */,
 				045E42CB1E5BECF300041E85 /* LaunchScreen.storyboard */,
@@ -77,6 +93,23 @@
 				045E42BE1E5BECF300041E85 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		045E42D41E5BEE9C00041E85 /* WLDownLoadManager */ = {
+			isa = PBXGroup;
+			children = (
+				045E42D51E5BEF0900041E85 /* WLDownLoadResponse.h */,
+				045E42D61E5BEF0900041E85 /* WLDownLoadResponse.m */,
+				045E42D81E5BF01200041E85 /* WLDownLoadRequest.h */,
+				045E42D91E5BF01200041E85 /* WLDownLoadRequest.m */,
+				045E42DB1E5BF0DE00041E85 /* WLDownLoadSingleManager.h */,
+				045E42DC1E5BF0DE00041E85 /* WLDownLoadSingleManager.m */,
+				045E42DE1E5BF0F000041E85 /* WLDownLoadGroupManager.h */,
+				045E42DF1E5BF0F000041E85 /* WLDownLoadGroupManager.m */,
+				045E42E21E5C108600041E85 /* WLDownLoadUtil.h */,
+				045E42E31E5C108600041E85 /* WLDownLoadUtil.m */,
+			);
+			path = WLDownLoadManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +185,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				045E42C51E5BECF300041E85 /* ViewController.m in Sources */,
+				045E42DA1E5BF01200041E85 /* WLDownLoadRequest.m in Sources */,
+				045E42DD1E5BF0DE00041E85 /* WLDownLoadSingleManager.m in Sources */,
+				045E42D71E5BEF0900041E85 /* WLDownLoadResponse.m in Sources */,
+				045E42E41E5C108600041E85 /* WLDownLoadUtil.m in Sources */,
+				045E42E01E5BF0F000041E85 /* WLDownLoadGroupManager.m in Sources */,
 				045E42C21E5BECF300041E85 /* AppDelegate.m in Sources */,
 				045E42BF1E5BECF300041E85 /* main.m in Sources */,
 			);
@@ -310,6 +348,7 @@
 				045E42D31E5BECF300041E85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
